@@ -1,0 +1,77 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 62.5%;
+    background-color: white;
+
+}
+
+#title {
+    text-align: center;
+    font-size: 5rem;
+    height: 10vh;
+    width: 100%;
+}
+
+#history {
+    font-size: 4rem;
+    height: 10vh;
+    width: 100%;
+}
+
+.game {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 50vh;
+    width: 150vh;
+    border: 2px solid black;
+    background-image: url("https://images.unsplash.com/photo-1546624538-0a85938a4f2e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=282&q=80");
+}
+
+
+#player  {
+    height: 12vh;
+    width: 6vh;
+    position: relative;
+    top: 9vh;
+    right: 70vh;
+    background-image: url("https://cdn.pixabay.com/photo/2013/07/12/17/56/nerd-152646_960_720.png");
+    background-size: contain;
+    background-color:rgba(250, 139, 244, 0.5);
+}
+
+@keyframes player{
+    0%{right: 70vh}
+    0%{top: 9vh}
+    50%{right: 60vh}
+    50%{top: 0vh}
+    100%{top: 9vh}
+    100%{right: 50vh}
+}
+.jump-over{
+    animation: player 0.5s;
+}
+/*.move{
+    animation: player 0.5s;
+} */
+
+#floor {
+    height: 12vh;
+    width: 74%;
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    bottom: 29vh;
+}
+
+#lava {
+    height: 12vh;
+    width: 6vh;
+    position: absolute;
+    background-color:rgb(255, 0, 0);
+    bottom: 29vh;
+}
