@@ -1,7 +1,7 @@
 const player = document.getElementById('player');
 const history = document.getElementById('history');
 
-fuction ;jumplava(); {
+function jumplava(){
     player.classList('jump-over');
     setTimeout(() => {
         player.classList.remove('jump-over');
