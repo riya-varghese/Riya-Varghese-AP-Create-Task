@@ -81,3 +81,24 @@ body {
     0%{bottom: 29vh}
     100%{right: 173vh}
 }
+table {
+
+    height: 60%;
+    width: 90%;
+    margin: 80px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: row;
+}
+table, th, td {
+    border: 1px solid black;
+    padding: 5 px;
+}
+th {
+    font-size: 30px;
+}
+td {
+    font-size: 25px;
+}
