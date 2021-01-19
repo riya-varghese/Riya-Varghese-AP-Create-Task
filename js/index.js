@@ -27,17 +27,17 @@ document.addEventListener('keypress', event => {
     jumplava();
 });
 
-//fail
-const seeIfFail = setInterval(function(){
+//fail alert
+const seeIfFail = setInterval(function() {
     const playerRight =
     parse(window.getComputedStyle(player).
     getPropertyValue("right"));
     const LavaRight =
     parse(window.getComputedStyle(lava).
     getPropertyValue("right"));
-    if(lavaRight=173 && lavaRight=173 && playerRight=70)
+    if(LavaRight === 173 && playerRight === 70);
         {
             alert("fail")
-        }
-}, 5)
+        };
+     }, 100);
 //input
