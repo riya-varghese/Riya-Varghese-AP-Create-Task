@@ -26,25 +26,37 @@ function jumplava(){
     }, 600);
 };
 
-document.addEventListener('keypress', event => {
+document.addEventListener('keyup', event => {
     jumplava();
 });
 
 //fail alert
-const seeIfFail = function() {
-    const playerRight =
-    parseInt(window.getComputedStyle(player).
-    getPropertyValue("right"));
-    const LavaRight =
-    parseInt(window.getComputedStyle(lava).
-    getPropertyValue("right"));
-    if(LavaRight === 75 && playerRight === 70)
-        {
-            alert("fail")     
-        };
-     };
 
-seeIfFail();
+// const seeIfFail = function() {
+//     const playerRight =
+//     parseInt(window.getComputedStyle(player).
+//     getPropertyValue("right"));
+//     const LavaRight =
+//     parseInt(window.getComputedStyle(lava).
+//     getPropertyValue("right"));
+//     if(LavaRight === 75 && playerRight === 70)
+//         {
+//             alert("fail")     
+//         };
+//      };
+
+// seeIfFail();
+setInterval(function () {
+    const playerRight = parseInt(
+        window.getComputedStyle(player).getPropertyValue("right")
+    );
+    const LavaRight = parseInt(
+        window.getComputedStyle(lava).getPropertyValue("right")
+    );
+    console.log(LavaRight, playerRight);
+    if(LavaRight === 75 && playerRight === 70) {
+        alert("fail");}
+    }, 1000);
 
 //input
 enter.addEventListener("click", displayName);

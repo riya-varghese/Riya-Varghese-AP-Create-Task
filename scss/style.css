@@ -54,25 +54,43 @@ body {
 
 @-webkit-keyframes player {
   0% {
-    right: 50px;
+    right: 70vh;
+  }
+  0% {
+    top: 9vh;
   }
   50% {
-    right: 100px;
+    right: 60vh;
+  }
+  50% {
+    top: 0vh;
   }
   100% {
-    right: 250px;
+    top: 9vh;
+  }
+  100% {
+    right: 50vh;
   }
 }
 
 @keyframes player {
   0% {
-    right: 50px;
+    right: 70vh;
+  }
+  0% {
+    top: 9vh;
   }
   50% {
-    right: 100px;
+    right: 60vh;
+  }
+  50% {
+    top: 0vh;
   }
   100% {
-    right: 250px;
+    top: 9vh;
+  }
+  100% {
+    right: 50vh;
   }
 }
 
@@ -81,11 +99,9 @@ body {
           animation: player 0.5s;
 }
 
-.move {
-  -webkit-animation: player 0.5s;
-          animation: player 0.5s;
-}
-
+/*.move{
+    animation: player 0.5s;
+} */
 #floor {
   height: 12vh;
   width: 74%;
@@ -97,8 +113,62 @@ body {
 #lava {
   height: 12vh;
   width: 6vh;
-  position: absolute;
+  position: relative;
   background-color: red;
-  bottom: 29vh;
+  bottom: -21vh;
+  right: -60vh;
+  -webkit-animation: lava 5s infinite linear;
+          animation: lava 5s infinite linear;
+}
+
+@-webkit-keyframes lava {
+  0% {
+    bottom: -21vh;
+  }
+  100% {
+    right: 75vh;
+  }
+}
+
+@keyframes lava {
+  0% {
+    bottom: -21vh;
+  }
+  100% {
+    right: 75vh;
+  }
+}
+
+table {
+  height: 60%;
+  width: 90%;
+  margin: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+table, th, td {
+  border: 1px solid black;
+  padding: 5 px;
+}
+
+th {
+  font-size: 30px;
+}
+
+td {
+  font-size: 25px;
 }
 /*# sourceMappingURL=style.css.map */
