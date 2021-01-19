@@ -8,6 +8,6 @@ function jumplava(){
     }, 250);
 };
 
-document.addEventListener('keypress', () => {
+document.addEventListener('keyup', () => {
     jumplava();
 });
