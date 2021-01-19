@@ -71,16 +71,20 @@ body {
 #lava {
     height: 12vh;
     width: 6vh;
-    position: absolute;
+    position: relative;
     background-color:rgb(255, 0, 0);
-    bottom: 29vh;
-    right: 50vh;
+    bottom: -21vh;
+    right: -60vh;
     animation: lava 5s infinite linear;
 }
 @keyframes lava{ 
-    0%{bottom: 29vh}
-    100%{right: 173vh}
+    0%{bottom: -21vh}
+    100%{right: 75vh}
 }
+
+
+
+
 table {
 
     height: 60%;

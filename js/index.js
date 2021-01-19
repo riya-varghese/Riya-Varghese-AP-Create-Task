@@ -12,6 +12,7 @@ document.addEventListener('keyup', () => {
     jumplava();
 });
 */
+
 //jumpfunction
 const player = document.getElementById('player');
 const history = document.getElementById('history');
@@ -32,19 +33,21 @@ document.addEventListener('keypress', event => {
 //fail alert
 const seeIfFail = function() {
     const playerRight =
-    parseint(window.getComputedStyle(player).
+    parseInt(window.getComputedStyle(player).
     getPropertyValue("right"));
     const LavaRight =
-    parseint(window.getComputedStyle(lava).
+    parseInt(window.getComputedStyle(lava).
     getPropertyValue("right"));
-    if(LavaRight === 173 && playerRight === 70)
+    if(LavaRight === 75 && playerRight === 70)
         {
-           console.log("hello")
+            alert("fail")     
         };
      };
-     seeIfFail();
+
+seeIfFail();
+
 //input
-entry.addEventListener("click", displayName);
+enter.addEventListener("click", displayName);
 var row = 1
 function displayName() {
    
