@@ -74,4 +74,10 @@ body {
     position: absolute;
     background-color:rgb(255, 0, 0);
     bottom: 29vh;
+    right: 50vh;
+    animation: lava 5s infinite linear;
+}
+@keyframes lava{ 
+    0%{bottom: 29vh}
+    100%{right: 173vh}
 }
