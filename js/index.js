@@ -30,10 +30,10 @@ document.addEventListener('keypress', event => {
 //fail alert
 const seeIfFail = setInterval(function() {
     const playerRight =
-    parse(window.getComputedStyle(player).
+    parseint(window.getComputedStyle(player).
     getPropertyValue("right"));
     const LavaRight =
-    parse(window.getComputedStyle(lava).
+    parseint(window.getComputedStyle(lava).
     getPropertyValue("right"));
     if(LavaRight === 173 && playerRight === 70);
         {
