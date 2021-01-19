@@ -39,7 +39,7 @@ const seeIfFail = function() {
     getPropertyValue("right"));
     if(LavaRight === 173 && playerRight === 70)
         {
-            alert("fail")
+           console.log("hello")
         };
      };
      seeIfFail();
