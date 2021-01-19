@@ -32,10 +32,10 @@ const seeIfFail = setInterval(function(){
     const playerRight =
     parse(window.getComputedStyle(player).
     getPropertyValue("right"));
-    const LavaRightt =
+    const LavaRight =
     parse(window.getComputedStyle(lava).
     getPropertyValue("right"));
-    if(lavaRightt=173 && lavaRightt=173 && playerRight=70)
+    if(lavaRight=173 && lavaRight=173 && playerRight=70)
         {
             alert("fail")
         }
