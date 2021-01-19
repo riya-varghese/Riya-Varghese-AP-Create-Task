@@ -39,5 +39,5 @@ const seeIfFail = setInterval(function() {
         {
             alert("fail")
         };
-     }, 100);
+     });
 //input
